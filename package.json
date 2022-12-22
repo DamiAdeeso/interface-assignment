@@ -1,0 +1,26 @@
+{
+  "homepage":"http://DamiAdeeso.github.io/interface-assignment",
+  "name": "InterfaceAssignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d ./frontend/build",
+    "build": "cd backend && npm install && cd ../frontend && npm install  && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DamiAdeeso/InterfaceAssignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DamiAdeeso/InterfaceAssignment/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
