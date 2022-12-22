@@ -9,7 +9,7 @@
     "start": "node backend/server.js",
     "predeploy":"npm run build",
     "deploy":"gh-pages -d ./frontend/build",
-    // "build": "npm run build"
+    "build": "cd backend && npm install && cd ../frontend && npm install && react-scripts build"
   },
   "repository": {
     "type": "git",
